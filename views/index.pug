@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")   
+    head 
+        meta(charset="UTF-8")
+        title='Login page'
+    body
+        h1 Passportl
+        p Welcome to our login app, if you want to proceed you need to log in
+        div.container
+            form.input(action="http://localhost:3000/auth/google/callback")
+                input.submit(type="submit" value="submit")
