@@ -17,12 +17,12 @@ passport.use(new GoogleStrategy({
     clientSecret: config.GOOGLE_CLIENT_SECRET,
     callbackURL: config.CALLBACK_URL
 },
-    function (accessToken, refreshToken, profile, cb) {
+    function (accessToken, refreshToken, profile, callback) {
         googleProfile = {
             id: profile.id,
             displayName: profile.displayName
         };
-        cb(null, profile);
+        callback(null, profile);
     }
 ));
 

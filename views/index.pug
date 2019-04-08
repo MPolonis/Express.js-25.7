@@ -3,9 +3,12 @@ html(lang="en")
     head 
         meta(charset="UTF-8")
         title='Login page'
+        link(href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet")
+        style
+            include ./style.css
     body
-        h1 Passportl
+        h1 Passport
         p Welcome to our login app, if you want to proceed you need to log in
         div.container
-            form.input(action="http://localhost:3000/auth/google/callback")
+            form.input(action="/auth/google")
                 input.submit(type="submit" value="submit")
